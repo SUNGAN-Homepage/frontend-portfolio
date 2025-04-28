@@ -1,0 +1,220 @@
+.portfolio-title {
+  font-family: 'Georgia', serif; /* 고급스러운 폰트 */
+  font-size: 1rem; /* 제목 크기 */
+  font-weight: bold; /* 두께 */
+  letter-spacing: 2px; /* 글자 간격 */
+  text-transform: uppercase; /* 대문자 변환 */
+  color: #333; /* 글자 색상 */
+  text-align: center; /* 중앙 정렬 */
+  position: relative; /* 선 위치 조정을 위해 relative 설정 */
+  margin-bottom: 40px; /* 아래쪽 간격 */
+  display: inline-block; /* 텍스트 길이에 따라 너비 조정 */
+}
+.slick-arrow.slick-prev.custom-arrow.prev-arrow::before {
+  /*내장 왼쪽 버튼 스타일 숨기기*/
+  display: none;
+}
+.slick-arrow.slick-next.custom-arrow.next-arrow::before {
+  /*내장 오른쪽 버튼 스타일 숨기기*/
+  display: none;
+}
+.portfolio-title::before,
+.portfolio-title::after {
+  content: ''; /* 선 생성 */
+  position: absolute;
+  width: 120%; /* 텍스트 길이를 기준으로 선 너비 설정 */
+  height: 2px; /* 선 두께 */
+  background-color: black; /* 선 색상 */
+  left: -10%; /* 중앙 정렬을 위해 위치 조정 */
+}
+
+.portfolio-title::before {
+  top: -10px; /* 텍스트 위 첫 번째 선 위치 */
+  box-shadow: 0 -6px 0 0 black; /* 위 두 번째 선 */
+}
+
+.portfolio-title::after {
+  bottom: -10px; /* 텍스트 아래 첫 번째 선 위치 */
+  box-shadow: 0 6px 0 0 black; /* 아래 두 번째 선 */
+}
+
+/* 화살표 스타일 */
+.custom-arrow {
+  position: absolute;
+  /*top: 50%;*/
+  transform: translateY(-50%);
+  width: 30px; /* 화살표 너비 */
+
+  /*height: 100px; !* 화살표 높이 (길이 설정) *!*/
+  background-color: transparent; /* 배경색 제거 */
+  color: #ccc; /* 화살표 색상 */
+  font-size: 3rem; /* 화살표 크기 */
+  line-height: 100px; /* 세로 중앙 정렬 */
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  height: 100%;
+  /*background-color:black;*/
+}
+
+.custom-arrow.next-arrow {
+  /*padding-right: 2%;*/
+  margin-right: -8%;
+}
+.custom-arrow.prev-arrow {
+  /*padding-left:2%;*/
+  margin-left: -8%;
+}
+
+.custom-arrow:hover {
+  color: #333; /* hover 시 색상 변경 */
+}
+
+.slick-slider {
+  margin: 0 auto;
+  width: 100%; /* 슬라이더가 화면 너비를 차지 */
+}
+
+.slick-arrow {
+  /*arrow 때문에 모바일에서 움직임이 생김*/
+  /*margin-right:100px;*/
+}
+.profile .slide {
+  position: relative;
+  padding-top: 160%; /* 4:5 비율 */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  object-fit: cover; /* 이미지 비율 유지 및 슬라이더 채우기 */
+  transition: transform 0.2s ease; /* 이미지 확대 전환 효과 */
+}
+
+
+.slide:hover {
+  transform: scale(1.02); /* 슬라이드 전체 확대 */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.slide:hover img {
+  transform: scale(1.1); /* 이미지 약간 더 확대 */
+}
+
+
+@media (max-width: 767px) {
+  .slick-slide.slick-active.slick-current {
+    opacity: 1;
+  }
+  .prev-arrow {
+    left: 2%;
+  }
+  .next-arrow {
+    right: 2%;
+  }
+}
+
+/* 테블릿용 스타일 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portfolio-title {
+    font-size: 2rem; /* 테블릿에서 텍스트 크기 증가 */
+    margin-bottom: 30px; /* 여백 조정 */
+  }
+  .prev-arrow {
+    left: 1%;
+  }
+  .next-arrow {
+    right: 1%;
+  }
+}
+
+/* 데스크톱용 스타일 */
+@media (min-width: 1025px) {
+  .custom-arrow.next-arrow {
+    /*padding-right: 2%;*/
+    margin-right: -3%;
+  }
+  .custom-arrow.prev-arrow {
+    /*padding-left:2%;*/
+    margin-left: -3%;
+  }
+
+  .portfolio-title {
+    font-size: 2.5rem; /* 데스크톱에서 더 큰 텍스트 크기 */
+    margin-bottom: 40px; /* 더 넓은 여백 */
+  }
+}
+
+/* 모달 배경 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 기본 모달 스타일 */
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* 기본값: 80% */
+  height: 80%;
+  text-align: left;
+  position: relative;
+}
+
+/* 데스크톱 화면에서 width를 70%로 설정 */
+@media (min-width: 1024px) {
+  .modal-content {
+    width: 60%; /* 데스크톱 화면에서 70%로 변경 */
+  }
+}
+
+.modal-content img {
+  width: 100%;
+  height: 80%;
+  margin-top: 20px;
+  object-fit: contain; /* 비율을 유지하면서 크기를 조정 */
+  background: black;
+}
+
+.modal-content h3 {
+  color: white;
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.modal-content p {
+  color: white;
+  font-size: 0.7rem;
+}
+
+/* 닫기 버튼 */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.slick-dots{
+  padding-top:50px;
+}

@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robostxt.html
+User-agent: *
+Disallow: /admin
+
+
+
+#DaumWebMasterTool:be6c492bf4b3951d6e5fcee90138f3a4f1ba25ff4ac0426d3ae78b515e0d30ee:FadTaYjdPysL8WEEb/Y2+Q==

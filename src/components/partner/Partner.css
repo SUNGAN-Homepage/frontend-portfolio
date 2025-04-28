@@ -1,0 +1,128 @@
+.partner {
+    margin: 40px 30px; /* 상하 40px, 좌우 20px */
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .partner  .slick-slider.slick-initialized{
+    width:100%;
+  }
+  .partner-title {
+    font-family: 'Georgia', serif; /* 고급스러운 폰트 */
+    font-size: 1.0rem; /* 제목 크기 */
+    font-weight: bold; /* 두께 */
+    letter-spacing: 2px; /* 글자 간격 */
+    text-transform: uppercase; /* 대문자 변환 */
+    color: #333; /* 글자 색상 */
+    text-align: center; /* 중앙 정렬 */
+    position: relative; /* 선 위치 조정을 위해 relative 설정 */
+    margin-bottom: 40px; /* 아래쪽 간격 */
+    display: inline-block; /* 텍스트 길이에 따라 너비 조정 */
+  }
+
+  .partner-title::before,
+  .partner-title::after {
+    content: ""; /* 선 생성 */
+    position: absolute;
+    width: 120%; /* 텍스트 길이를 기준으로 선 너비 설정 */
+    height: 2px; /* 선 두께 */
+    background-color: black; /* 선 색상 */
+    left: -10%; /* 중앙 정렬을 위해 위치 조정 */
+  }
+
+  .partner-title::before {
+    top: -10px; /* 텍스트 위 첫 번째 선 위치 */
+    box-shadow: 0 -6px 0 0 black; /* 위 두 번째 선 */
+  }
+
+  .partner-title::after {
+    bottom: -10px; /* 텍스트 아래 첫 번째 선 위치 */
+    box-shadow: 0 6px 0 0 black; /* 아래 두 번째 선 */
+  }
+
+  /* 테블릿용 스타일 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .partner-title {
+      font-size: 2rem; /* 테블릿에서 텍스트 크기 증가 */
+      margin-bottom: 30px; /* 여백 조정 */
+    }
+  }
+
+  /* 데스크톱용 스타일 */
+  @media (min-width: 1025px) {
+    .partner-title {
+      font-size: 2.5rem; /* 데스크톱에서 더 큰 텍스트 크기 */
+      margin-bottom: 40px; /* 더 넓은 여백 */
+    }
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 기본 3열 */
+    gap: 15px; /* 박스 간 간격 */
+    justify-items: center;
+  }
+
+  .partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* 로고 박스 배경 */
+    border-radius: 10px;
+    width: 100%; /* 슬라이더 너비에 맞춤 */
+    height: 100%; /* 슬라이더 높이에 맞춤 */
+    padding: 10%;
+    margin: 10px; /* 로고 박스 간 간격 */
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 기본 그림자 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 애니메이션 효과 */
+  }
+
+  .partner-item img {
+    max-width: 100%; /* 로고 이미지가 박스의 너비를 넘지 않도록 설정 */
+    max-height: 100%; /* 로고 이미지가 박스의 높이를 넘지 않도록 설정 */
+    object-fit: contain; /* 로고 비율 유지 */
+  }
+  /* hover 효과 */
+  .partner-item:hover {
+    transform: translateY(-5px) scale(1.05); /* 살짝 위로 올라가고 확대 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 */
+  }
+
+  .slick-slider {
+    width: 100%;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px; /* 슬라이드 간격 */
+  }
+
+/* 테블릿 이상: 4열 */
+@media (min-width: 768px) {
+    .partner-grid {
+      grid-template-columns: repeat(4, 1fr); /* 테블릿: 4열 */
+    }
+  }
+
+  /* 데스크톱 이상: 8열 */
+  @media (min-width: 1024px) {
+    .partner-grid {
+      grid-template-columns: repeat(8, 1fr); /* 데스크톱: 8열 */
+    }
+    .partner  .slick-slider.slick-initialized{
+      width:80%;
+    }
+
+
+  }
