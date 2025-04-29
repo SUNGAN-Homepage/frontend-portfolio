@@ -87,30 +87,12 @@ flowchart TD
 | Largest Contentful Paint | 8.6s ❌ | 3.1s**✅** | 1.6s | 1.1s |
 | Total Blocking Time | 960ms ❌ | **80ms ✅** | 150ms | 70ms |
 | CLS | 0.001 | 0 | 0 | 0 |
+### 📊 PageSpeed Insights 개선 전/후 비교 스크린샷
 
-개선전(모바일)
-
-![image.png](attachment:ec87a8ad-7ffe-4d3b-887b-9f8224156245:image.png)
-
-![image.png](attachment:64a2f48a-e361-4ca3-8051-d0eca38fb6e3:image.png)
-
-개선전(데스크톱)
-
-![image.png](attachment:8f0fe8b0-868c-4212-8a8d-86029c3dd655:image.png)
-
-![image.png](attachment:9ceac319-0673-4124-8c79-af79d8750b5a:image.png)
-
-개선후(모바일)
-
-![image.png](attachment:be2b508f-d7ac-48d3-a1f5-7fe7ba2745a7:image.png)
-
-![image.png](attachment:2f1655fa-ac45-4bdd-abfd-53ded4971c97:image.png)
-
-개선후(데스크톱)
-
-![image.png](attachment:325094fa-0aa4-4dff-9b9b-6345491ad091:image.png)
-
-![image.png](attachment:8e82405d-aed5-4880-8241-4991f55739dd:image.png)
+| 구분 | 개선 전 | 개선 후 |
+|------|---------|---------|
+| **모바일** | ![before-mobile.png](/readmeImage/pageSpeedInsights/before-mobile.png)<br>![before-mobile2.png](/readmeImage/pageSpeedInsights/before-mobile2.png) | ![after-mobile.png](/readmeImage/pageSpeedInsights/after-mobile.png)<br>![after-mobile2.png](/readmeImage/pageSpeedInsights/after-mobile2.png) |
+| **데스크톱** | ![before-desktop.png](/readmeImage/pageSpeedInsights/before-desktop.png)<br>![before-desktop2.png](/readmeImage/pageSpeedInsights/before-desktop2.png) | ![after-desktop.png](/readmeImage/pageSpeedInsights/after-desktop.png)<br>![after-desktop2.png](/readmeImage/pageSpeedInsights/after-desktop2.png) |
 
 ### 🛠️ 적용한 최적화 기법
 
@@ -179,13 +161,16 @@ location /admin {
 - **문제**: OG 메타태그 누락으로 SNS 썸네일/타이틀이 표시되지 않음
 - **해결 방법**: 각 페이지별 title, description, og:image 태그 추가 및 SNS 디버거로 확인
 
+ 
+ [index.html 파일 바로 보기](/index.html)
+
 ## 9. 실행 방법
 
 ---
 
 ```bash
-git clone <https://github.com/your-name/sungan-studio.git>
-cd sungan-studio
+git clone <https://github.com/SUNGAN-Homepage/frontend-portfolio.git>
+cd frontend-portfolio
 npm install
 npm run dev
 ```
