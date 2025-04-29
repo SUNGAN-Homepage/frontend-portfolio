@@ -67,10 +67,10 @@ flowchart TD
 
 | 지표 | 모바일 (전) | 모바일 (후) | 데스크톱 (전) | 데스크톱 (후) |
 | --- | --- | --- | --- | --- |
-| Lighthouse 점수 | 37점 ❌ | **86점 ✅** | 84점 ⚠️ | **92점 ✅** |
-| First Contentful Paint | 4.3s | 2.7s**✅** | 1.0s | 0.9s |
-| Largest Contentful Paint | 8.6s ❌ | 3.1s**✅** | 1.6s | 1.1s |
-| Total Blocking Time | 960ms ❌ | **80ms ✅** | 150ms | 70ms |
+| Lighthouse 점수 | 37점  | **86점** | 84점  | **92점** |
+| First Contentful Paint | 4.3s | **2.7s** | 1.0s | 0.9s |
+| Largest Contentful Paint | 8.6s  | **3.1s** | 1.6s | 1.1s |
+| Total Blocking Time | 960ms  | **80ms** | 150ms | 70ms |
 | CLS | 0.001 | 0 | 0 | 0 |
 ### 📊 PageSpeed Insights 개선 전/후 비교 스크린샷
 
