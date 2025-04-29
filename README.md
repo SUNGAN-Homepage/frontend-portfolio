@@ -21,39 +21,26 @@ SEO 최적화, 관리자 페이지 구성까지 **프론트엔드 90% 이상**�
 
 ## 3. 주요 기능 및 특징
 
-### 1) 메인 페이지
+### 📸 주요 화면 (PC / 모바일 비교)
 
-- 브랜드 소개, 주요 공간 이미지 배너 슬라이드 구현
+| 구분 | PC 화면 | 모바일 화면 |
+|:--|:--|:--|
+| **1) Hero 이미지** | <img src="/readmeImage/homepage/mainPage.png" width="300"/> | <img src="/readmeImage/homepage/mainPageMobile.png" width="200"/> |
+| **2) 스튜디오 소개** | <img src="/readmeImage/homepage/IntroDetail.png" width="300"/> | <img src="/readmeImage/homepage/IntroDetailMobile.png" width="200"/> |
+| **3) 파트너 기능**<br>_(이미지 클릭 시 파트너사 홈페이지 이동)_ | <img src="/readmeImage/homepage/Partner.png" width="300"/> | <img src="/readmeImage/homepage/PartnerMobile.png" width="200"/> |
+| **4) 예약/문의 기능** | <img src="/readmeImage/homepage/Contact.png" width="300"/> | <img src="/readmeImage/homepage/ContactMobile.png" width="200"/> |
+| **5) 비즈니스 슬라이드**<br>_(react-slick 기반 슬라이더)_ | <img src="/readmeImage/homepage/Business.png" width="300"/> | <img src="/readmeImage/homepage/BusinessMobile.png" width="200"/> |
+| **6) 프로필 슬라이드**<br>_(react-slick 기반 슬라이더)_ | <img src="/readmeImage/homepage/Profile.png" width="300"/> | <img src="/readmeImage/homepage/ProfileMobile.png" width="200"/> |
 
-### 2) 스튜디오 소개
 
-- 공간 설명, 인테리어 및 특징 안내
 
-### 3) 예약/문의 기능
 
-- 예약 폼 작성 후 관리자 이메일 알림
-- 입력 유효성 검증 및 UX 최적화
-
-### 4) 갤러리 / 슬라이드
-
-- 행사 / 프로필 / 파트너사 이미지 슬라이드
-- `react-slick` 기반 슬라이더 구성
-
-### 5) 관리자 페이지
+### 2. 관리자 페이지
 
 - 이미지 업로드 및 Drag&Drop 정렬 기능
 - 문의 이메일 설정 UI
 - `/admin` 경로 별도 구성 및 배포
-
-### 6) 반응형 웹
-
-- Material-UI의 Grid 시스템 기반으로 모바일/태블릿/PC 대응
-
-### 7) SEO 최적화
-
-- 메타 태그 설정 (title, description, og:image 등)
-- SNS 공유 시 썸네일/타이틀 최적화
-- 핵심 이미지 preload 및 preconnect 적용
+![output.gif](/readmeImage/adminPage/output.gif)
 
 ---
 
