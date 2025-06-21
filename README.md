@@ -7,7 +7,7 @@ SEO 최적화, 관리자 페이지 구성까지 **프론트엔드 90% 이상**�
 - 기간: 2025/01/01 ~ 2025/03/30
 - 역할: 프론트엔드 90%
 - 프로젝트 유형: 외주 / 클라이언트 요청 / 팀 프로젝트
-
+- 디자인: [figma](https://www.figma.com/design/wWYIfQNmlK7dfl7UzH9p1H/Sungan-Animation?t=zwjYaHs1hGugAuID-0)
 ---
 
 ## 2. 주요 기술 스택
