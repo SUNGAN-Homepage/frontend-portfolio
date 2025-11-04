@@ -147,7 +147,7 @@ location /admin {
 - **해결 방법**: 각 페이지별 title, description, og:image 태그 추가 및 SNS 디버거로 확인
 
  
- [index.html 파일 바로 보기](/index.html)
+ [index.html 파일 바로 보기](/main/index.html)
 
 ## 9. 실행 방법
 
