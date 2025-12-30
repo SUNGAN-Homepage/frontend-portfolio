@@ -5,6 +5,7 @@ function Intro() {
   return (
     <AnimatedComponent id="home">
       <Box
+        component="section"
         sx={{
           background: 'gray',
           mt: { xs: 5, sm: '0' },

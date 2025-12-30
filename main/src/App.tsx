@@ -16,7 +16,7 @@ function App() {
       {/*메뉴 부분*/}
       <Header />
       {/*간략 소개*/}
-      <Box sx={{ maxWidth: '1280px', margin: '0 auto' }}>
+      <Box component="main" sx={{ maxWidth: '1280px', margin: '0 auto' }}>
         <Intro />
         <Divider
           sx={{

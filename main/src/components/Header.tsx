@@ -141,6 +141,7 @@ export default function Header() {
           </Box>
 
           <Box
+            component="nav"
             sx={{
               display: 'flex',
               gridTemplateColumns: 'repeat(auto-fit, minmax(50px, 1fr))', // 메뉴 가로 배치

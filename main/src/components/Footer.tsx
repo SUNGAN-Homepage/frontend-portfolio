@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 function Footer() {
   return (
     <Box
+      component="footer"
       sx={{
         height: { sm: '100px' },
         backgroundColor: '#303030',
